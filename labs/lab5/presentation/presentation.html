@@ -1,0 +1,201 @@
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Гэинэ Андрей
+\item
+  НФИбд-02-22
+\item
+  Российский университет дружбы народов
+\item
+  {[}1032219249@pfur.ru{]}
+\end{itemize}
+\end{frame}
+
+\section{Выполнение лабораторной
+работы}\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Построить модель SIR в \emph{xcos} и OpenModelica.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+\begin{enumerate}
+\tightlist
+\item
+  Реализовать модель SIR в в \emph{xcos};
+\item
+  Реализовать модель SIR с помощью блока Modelica в в \emph{xcos};
+\item
+  Реализовать модель SIR в OpenModelica;
+\item
+  Реализовать модель SIR с учётом процесса рождения / гибели особей в
+  xcos (в том числе и с использованием блока Modelica), а также в
+  OpenModelica;
+\item
+  Построить графики эпидемического порога при различных значениях
+  параметров модели (в частности изменяя параметр \(\mu\));
+\item
+  Сделать анализ полученных графиков в зависимости от выбранных значений
+  параметров модели.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Реализация модели в xcos}
+\phantomsection\label{ux440ux435ux430ux43bux438ux437ux430ux446ux438ux44f-ux43cux43eux434ux435ux43bux438-ux432-xcos}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/2.png}
+\caption{Модель SIR в xcos}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Реализация модели в xcos}
+\phantomsection\label{ux440ux435ux430ux43bux438ux437ux430ux446ux438ux44f-ux43cux43eux434ux435ux43bux438-ux432-xcos-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6.png}
+\caption{Эпидемический порог модели SIR при
+\(\beta = 1, \nu = 0.3\)}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Реализация модели с помощью блока Modelica в xcos}
+\phantomsection\label{ux440ux435ux430ux43bux438ux437ux430ux446ux438ux44f-ux43cux43eux434ux435ux43bux438-ux441-ux43fux43eux43cux43eux449ux44cux44e-ux431ux43bux43eux43aux430-modelica-ux432-xcos}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/7.png}
+\caption{Модель SIR в xcos с применением блока Modelica}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Реализация модели с помощью блока Modelica в xcos}
+\phantomsection\label{ux440ux435ux430ux43bux438ux437ux430ux446ux438ux44f-ux43cux43eux434ux435ux43bux438-ux441-ux43fux43eux43cux43eux449ux44cux44e-ux431ux43bux43eux43aux430-modelica-ux432-xcos-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/10.png}
+\caption{Эпидемический порог модели SIR при
+\(\beta = 1, \nu = 0.3\)}\label{fig:010}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Упражнение}
+\phantomsection\label{ux443ux43fux440ux430ux436ux43dux435ux43dux438ux435}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/11.png}
+\caption{Эпидемический порог модели SIR при
+\(\beta = 1, \nu = 0.3\)}\label{fig:012}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/13.png}
+\caption{Модель SIR с учетом демографических процессов в
+xcos}\label{fig:013}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/14.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:014}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/15.png}
+\caption{Модель SIR с учетом демографических процессов в xcos с
+применением блока Modelica}\label{fig:015}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-3}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/18.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:018}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44f-4}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/19.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:019}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения(\(\mu = 0.3\))}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44fmu-0.3}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/20.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:021}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения(\(\mu = 0.9\))}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44fmu-0.9}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/21.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:022}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения(\(\beta = 1\),
+\(\nu = 0.1\), \(\mu = 0.1\))}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44fbeta-1-nu-0.1-mu-0.1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/22.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:023}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения(\(\mu = 0.9\))}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44fmu-0.9-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/23.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:024}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задание для самостоятельного выполнения(\(\beta = 4\),
+\(\nu = 0.3, \mu = 0.2\))}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435-ux434ux43bux44f-ux441ux430ux43cux43eux441ux442ux43eux44fux442ux435ux43bux44cux43dux43eux433ux43e-ux432ux44bux43fux43eux43bux43dux435ux43dux438ux44fbeta-4-nu-0.3-mu-0.2}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/24.png}
+\caption{График модели SIR с учетом демографических
+процессов}\label{fig:025}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+В процессе выполнения данной лабораторной работы была построена модель
+SIR в \emph{xcos} и OpenModelica.
+\end{frame}

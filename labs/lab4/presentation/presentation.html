@@ -1,0 +1,150 @@
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Гэинэ Андрей
+\item
+  НФИбд-02-22
+\item
+  Российский университет дружбы народов
+\item
+  {[}1032219249@pfur.ru{]}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Выполнить самостоятельно задание при помощи NS-2, GNUplot, Xgraph.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+\begin{enumerate}
+\tightlist
+\item
+  Для приведенной схемы разработать имитационную модель в пакеты NS-2.
+\item
+  Построить график изменения размера окна TCP.
+\item
+  Построить график изменения длины очереди и средней длины очереди на
+  первом маршрутизаторе.
+\item
+  Оформить отчёт о выполненной работе.
+\end{enumerate}
+\end{frame}
+
+\section{Выполнение лабораторной
+работы}\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+
+\begin{frame}{Код первый}
+\phantomsection\label{ux43aux43eux434-ux43fux435ux440ux432ux44bux439}
+Создал файл lab4\_2.tcl. И записал в него код.
+\end{frame}
+
+\begin{frame}{Запустил программу с помощью NS-2. Получил nam файл со
+схемой моделируемой сети}
+\phantomsection\label{ux437ux430ux43fux443ux441ux442ux438ux43b-ux43fux440ux43eux433ux440ux430ux43cux43cux443-ux441-ux43fux43eux43cux43eux449ux44cux44e-ns-2.-ux43fux43eux43bux443ux447ux438ux43b-nam-ux444ux430ux439ux43b-ux441ux43e-ux441ux445ux435ux43cux43eux439-ux43cux43eux434ux435ux43bux438ux440ux443ux435ux43cux43eux439-ux441ux435ux442ux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/1.png}
+\caption{nam файл моделируемой сети}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получил график изменения окна TCP на линке 1-го источника
+с помощью Xgraph}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux43eux43aux43dux430-tcp-ux43dux430-ux43bux438ux43dux43aux435-1-ux433ux43e-ux438ux441ux442ux43eux447ux43dux438ux43aux430-ux441-ux43fux43eux43cux43eux449ux44cux44e-xgraph}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/2.png}
+\caption{График изменения окна TCP на линке 1-го источника при N =
+20}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получил график изменения окна TCP на всех источниках с
+помощью Xgraph}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux43eux43aux43dux430-tcp-ux43dux430-ux432ux441ux435ux445-ux438ux441ux442ux43eux447ux43dux438ux43aux430ux445-ux441-ux43fux43eux43cux43eux449ux44cux44e-xgraph}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/3.png}
+\caption{График изменения окна TCP на всех источниках при N =
+20}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получил график изменения размера длины очереди с помощью
+Xgraph}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux440ux430ux437ux43cux435ux440ux430-ux434ux43bux438ux43dux44b-ux43eux447ux435ux440ux435ux434ux438-ux441-ux43fux43eux43cux43eux449ux44cux44e-xgraph}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/4.png}
+\caption{График изменения размера длины очереди при N =
+20}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получил график изменения средней длины очереди с помощью
+Xgraph}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux441ux440ux435ux434ux43dux435ux439-ux434ux43bux438ux43dux44b-ux43eux447ux435ux440ux435ux434ux438-ux441-ux43fux43eux43cux43eux449ux44cux44e-xgraph}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/5.png}
+\caption{График изменения средней длины очереди при N =
+20}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Код второй}
+\phantomsection\label{ux43aux43eux434-ux432ux442ux43eux440ux43eux439}
+Создал файл lab4\_2 и записал в него код для GNUplot-графиков,
+представленный ниже. Сделал его исполняемым и запустил
+\end{frame}
+
+\begin{frame}{Получил график изменения размера окна TCP на линке 1-го
+источника}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux440ux430ux437ux43cux435ux440ux430-ux43eux43aux43dux430-tcp-ux43dux430-ux43bux438ux43dux43aux435-1-ux433ux43e-ux438ux441ux442ux43eux447ux43dux438ux43aux430}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6.png}
+\caption{График изменения размера окна TCP на линке 1-го источника при N
+= 20}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получил график изменения размера окна TCP на всех
+источниках}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux440ux430ux437ux43cux435ux440ux430-ux43eux43aux43dux430-tcp-ux43dux430-ux432ux441ux435ux445-ux438ux441ux442ux43eux447ux43dux438ux43aux430ux445}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/7.png}
+\caption{График изменения размера окна TCP на всех источниках при N =
+20}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получил график изменения размера длины очереди}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux440ux430ux437ux43cux435ux440ux430-ux434ux43bux438ux43dux44b-ux43eux447ux435ux440ux435ux434ux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/8.png}
+\caption{График изменения размера длины очереди при N =
+20}\label{fig:008}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получил график изменения размера средней длины очереди}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43b-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux440ux430ux437ux43cux435ux440ux430-ux441ux440ux435ux434ux43dux435ux439-ux434ux43bux438ux43dux44b-ux43eux447ux435ux440ux435ux434ux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/9.png}
+\caption{График изменения размера средней длины очереди при N =
+20}\label{fig:009}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+Выполнил самостоятельное задание. Применил NS-2, GNUplot, Xgraph.
+\end{frame}
