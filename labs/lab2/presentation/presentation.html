@@ -1,0 +1,148 @@
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Гэинэ Андрей
+\item
+  НФИбд-02-22
+\item
+  Российский университет дружбы народов
+\item
+  {[}1032219249@pfur.ru{]}
+\end{itemize}
+\end{frame}
+
+\section{Выполнение лабораторной
+работы}\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+
+\begin{frame}{Введение}
+\phantomsection\label{ux432ux432ux435ux434ux435ux43dux438ux435}
+Исследовать протокол TCP и алгоритм управления очередью RED.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+\begin{enumerate}
+\tightlist
+\item
+  Выполнить пример с дисциплиной RED.
+\item
+  Изменить протокол TCP с Reno на NewReno, Vegas. Пояснить результаты.
+\item
+  Внести изменения в отображаемые графики.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Разработал сценарий, реализующий модель согласно рис. 2.4,
+построил в Xgraph график изменения TCP-окна, график изменения длины
+очереди}
+\phantomsection\label{ux440ux430ux437ux440ux430ux431ux43eux442ux430ux43b-ux441ux446ux435ux43dux430ux440ux438ux439-ux440ux435ux430ux43bux438ux437ux443ux44eux449ux438ux439-ux43cux43eux434ux435ux43bux44c-ux441ux43eux433ux43bux430ux441ux43dux43e-ux440ux438ux441.-2.4-ux43fux43eux441ux442ux440ux43eux438ux43b-ux432-xgraph-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-tcp-ux43eux43aux43dux430-ux433ux440ux430ux444ux438ux43a-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux434ux43bux438ux43dux44b-ux43eux447ux435ux440ux435ux434ux438}
+и средней длины очереди
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/1.png}
+\caption{График изменения TCP-окна, график изменения длины
+очереди}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отобразил графики, запустив программу. Средняя длина
+очереди находится в диапазоне от 2 до 4. Макс. длина достигает значения
+14}
+\phantomsection\label{ux43eux442ux43eux431ux440ux430ux437ux438ux43b-ux433ux440ux430ux444ux438ux43aux438-ux437ux430ux43fux443ux441ux442ux438ux432-ux43fux440ux43eux433ux440ux430ux43cux43cux443.-ux441ux440ux435ux434ux43dux44fux44f-ux434ux43bux438ux43dux430-ux43eux447ux435ux440ux435ux434ux438-ux43dux430ux445ux43eux434ux438ux442ux441ux44f-ux432-ux434ux438ux430ux43fux430ux437ux43eux43dux435-ux43eux442-2-ux434ux43e-4.-ux43cux430ux43aux441.-ux434ux43bux438ux43dux430-ux434ux43eux441ux442ux438ux433ux430ux435ux442-ux437ux43dux430ux447ux435ux43dux438ux44f-14}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/2.png}
+\caption{Отображение графиков для Reno}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Изменил тип с Reno на NewReno}
+\phantomsection\label{ux438ux437ux43cux435ux43dux438ux43b-ux442ux438ux43f-ux441-reno-ux43dux430-newreno}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/3.png}
+\caption{Изменение протокола TCP}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отобразил графики, запустив программу. Значения длины
+очереди, макс. длины совпадает с предыдущими значениями. В обоих случаях
+окна увеличиваются до тех пор, пока не произойдет потеря сегмента}
+\phantomsection\label{ux43eux442ux43eux431ux440ux430ux437ux438ux43b-ux433ux440ux430ux444ux438ux43aux438-ux437ux430ux43fux443ux441ux442ux438ux432-ux43fux440ux43eux433ux440ux430ux43cux43cux443.-ux437ux43dux430ux447ux435ux43dux438ux44f-ux434ux43bux438ux43dux44b-ux43eux447ux435ux440ux435ux434ux438-ux43cux430ux43aux441.-ux434ux43bux438ux43dux44b-ux441ux43eux432ux43fux430ux434ux430ux435ux442-ux441-ux43fux440ux435ux434ux44bux434ux443ux449ux438ux43cux438-ux437ux43dux430ux447ux435ux43dux438ux44fux43cux438.-ux432-ux43eux431ux43eux438ux445-ux441ux43bux443ux447ux430ux44fux445-ux43eux43aux43dux430-ux443ux432ux435ux43bux438ux447ux438ux432ux430ux44eux442ux441ux44f-ux434ux43e-ux442ux435ux445-ux43fux43eux440-ux43fux43eux43aux430-ux43dux435-ux43fux440ux43eux438ux437ux43eux439ux434ux435ux442-ux43fux43eux442ux435ux440ux44f-ux441ux435ux433ux43cux435ux43dux442ux430}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/4.png}
+\caption{Отображение графиков для NewReno}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отобразил графики, запустив программу. Значения длины
+очереди, макс. длины совпадает с предыдущими значениями. В обоих случаях
+окна увеличиваются до тех пор, пока не произойдет потеря сегмента}
+\phantomsection\label{ux43eux442ux43eux431ux440ux430ux437ux438ux43b-ux433ux440ux430ux444ux438ux43aux438-ux437ux430ux43fux443ux441ux442ux438ux432-ux43fux440ux43eux433ux440ux430ux43cux43cux443.-ux437ux43dux430ux447ux435ux43dux438ux44f-ux434ux43bux438ux43dux44b-ux43eux447ux435ux440ux435ux434ux438-ux43cux430ux43aux441.-ux434ux43bux438ux43dux44b-ux441ux43eux432ux43fux430ux434ux430ux435ux442-ux441-ux43fux440ux435ux434ux44bux434ux443ux449ux438ux43cux438-ux437ux43dux430ux447ux435ux43dux438ux44fux43cux438.-ux432-ux43eux431ux43eux438ux445-ux441ux43bux443ux447ux430ux44fux445-ux43eux43aux43dux430-ux443ux432ux435ux43bux438ux447ux438ux432ux430ux44eux442ux441ux44f-ux434ux43e-ux442ux435ux445-ux43fux43eux440-ux43fux43eux43aux430-ux43dux435-ux43fux440ux43eux438ux437ux43eux439ux434ux435ux442-ux43fux43eux442ux435ux440ux44f-ux441ux435ux433ux43cux435ux43dux442ux430-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/4_1.png}
+\caption{Отображение графиков для NewReno}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Изменил тип с Reno на Vegas}
+\phantomsection\label{ux438ux437ux43cux435ux43dux438ux43b-ux442ux438ux43f-ux441-reno-ux43dux430-vegas}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/5.png}
+\caption{Изменение протокола TCP}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отобразил графики, запустив программу. Видно, что при
+Vegas макс. размер окна составляет 20, а не 34. TCP Vegas обнаруживает
+перегрузку до того, как теряется пакет, мгновенно уменьшается размер
+окна}
+\phantomsection\label{ux43eux442ux43eux431ux440ux430ux437ux438ux43b-ux433ux440ux430ux444ux438ux43aux438-ux437ux430ux43fux443ux441ux442ux438ux432-ux43fux440ux43eux433ux440ux430ux43cux43cux443.-ux432ux438ux434ux43dux43e-ux447ux442ux43e-ux43fux440ux438-vegas-ux43cux430ux43aux441.-ux440ux430ux437ux43cux435ux440-ux43eux43aux43dux430-ux441ux43eux441ux442ux430ux432ux43bux44fux435ux442-20-ux430-ux43dux435-34.-tcp-vegas-ux43eux431ux43dux430ux440ux443ux436ux438ux432ux430ux435ux442-ux43fux435ux440ux435ux433ux440ux443ux437ux43aux443-ux434ux43e-ux442ux43eux433ux43e-ux43aux430ux43a-ux442ux435ux440ux44fux435ux442ux441ux44f-ux43fux430ux43aux435ux442-ux43cux433ux43dux43eux432ux435ux43dux43dux43e-ux443ux43cux435ux43dux44cux448ux430ux435ux442ux441ux44f-ux440ux430ux437ux43cux435ux440-ux43eux43aux43dux430}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6.png}
+\caption{Отображение графиков для Vegas}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отобразил графики, запустив программу. Видно, что при
+Vegas макс. размер окна составляет 20, а не 34. TCP Vegas обнаруживает
+перегрузку до того, как теряется пакет, мгновенно уменьшается размер
+окна}
+\phantomsection\label{ux43eux442ux43eux431ux440ux430ux437ux438ux43b-ux433ux440ux430ux444ux438ux43aux438-ux437ux430ux43fux443ux441ux442ux438ux432-ux43fux440ux43eux433ux440ux430ux43cux43cux443.-ux432ux438ux434ux43dux43e-ux447ux442ux43e-ux43fux440ux438-vegas-ux43cux430ux43aux441.-ux440ux430ux437ux43cux435ux440-ux43eux43aux43dux430-ux441ux43eux441ux442ux430ux432ux43bux44fux435ux442-20-ux430-ux43dux435-34.-tcp-vegas-ux43eux431ux43dux430ux440ux443ux436ux438ux432ux430ux435ux442-ux43fux435ux440ux435ux433ux440ux443ux437ux43aux443-ux434ux43e-ux442ux43eux433ux43e-ux43aux430ux43a-ux442ux435ux440ux44fux435ux442ux441ux44f-ux43fux430ux43aux435ux442-ux43cux433ux43dux43eux432ux435ux43dux43dux43e-ux443ux43cux435ux43dux44cux448ux430ux435ux442ux441ux44f-ux440ux430ux437ux43cux435ux440-ux43eux43aux43dux430-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6_1.png}
+\caption{Отображение графиков для Vegas}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Внес изменения в код программы. Поменял цвет фона,
+траекторий , подписей}
+\phantomsection\label{ux432ux43dux435ux441-ux438ux437ux43cux435ux43dux435ux43dux438ux44f-ux432-ux43aux43eux434-ux43fux440ux43eux433ux440ux430ux43cux43cux44b.-ux43fux43eux43cux435ux43dux44fux43b-ux446ux432ux435ux442-ux444ux43eux43dux430-ux442ux440ux430ux435ux43aux442ux43eux440ux438ux439-ux43fux43eux434ux43fux438ux441ux435ux439}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/7.png}
+\caption{Изменение графиков}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отобразил новые графики, запустив программу}
+\phantomsection\label{ux43eux442ux43eux431ux440ux430ux437ux438ux43b-ux43dux43eux432ux44bux435-ux433ux440ux430ux444ux438ux43aux438-ux437ux430ux43fux443ux441ux442ux438ux432-ux43fux440ux43eux433ux440ux430ux43cux43cux443}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/8.png}
+\caption{Видоизмененные графики}\label{fig:008}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+Исследовал протокол TCP и алгоритм управления очередью RED.
+\end{frame}
