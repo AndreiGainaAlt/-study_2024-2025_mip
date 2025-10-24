@@ -1,0 +1,109 @@
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Гэинэ Андрей
+\item
+  НФИбд-02-22
+\item
+  Российский университет дружбы народов
+\item
+  {[}1032219249@pfur.ru{]}
+\end{itemize}
+\end{frame}
+
+\section{Выполнение лабораторной
+работы}\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Реализовать в CPN tools простой протокол передачи данных и провести
+анализ.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+\begin{enumerate}
+\tightlist
+\item
+  Реализовать в CPN Tools простой протокол передачи данных.
+\item
+  Вычислить пространство состояний, сформировать отчет и построить граф.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Задал декларации}
+\phantomsection\label{ux437ux430ux434ux430ux43b-ux434ux435ux43aux43bux430ux440ux430ux446ux438ux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/1.png}
+\caption{Задание деклараций}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Построил начальный граф}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux438ux43b-ux43dux430ux447ux430ux43bux44cux43dux44bux439-ux433ux440ux430ux444}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/2.png}
+\caption{Начальный граф}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Добавил промежуточные состояния}
+\phantomsection\label{ux434ux43eux431ux430ux432ux438ux43b-ux43fux440ux43eux43cux435ux436ux443ux442ux43eux447ux43dux44bux435-ux441ux43eux441ux442ux43eux44fux43dux438ux44f}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/3.png}
+\caption{Промежуточные состояния}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Задал декларации}
+\phantomsection\label{ux437ux430ux434ux430ux43b-ux434ux435ux43aux43bux430ux440ux430ux446ux438ux438-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/4.png}
+\caption{Задание деклараций}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Модель простого протокола передачи данных}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43fux440ux43eux441ux442ux43eux433ux43e-ux43fux440ux43eux442ux43eux43aux43eux43bux430-ux43fux435ux440ux435ux434ux430ux447ux438-ux434ux430ux43dux43dux44bux445}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/5.png}
+\caption{Модель простого протокола передачи данных}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Упражнение}
+\phantomsection\label{ux443ux43fux440ux430ux436ux43dux435ux43dux438ux435}
+Вычислим пространство состояний. - 13341 состояний и 206461 переходов
+между ними. - Указаны границы значений для каждого элемента:
+промежуточные состояния A, B, C(наибольшая верхняя граница у A, так как
+после него пакеты отбрасываются. Так как мы установили максимум 10, то у
+следующего состояния B верхняя граница -- 10), вспомогательные состояния
+SP, SA, NextRec, NextSend, Receiver(в них может находиться только один
+пакет) и состояние Send(в нем хранится только 8 элементов, так как мы
+задали их в начале и с ними никаких изменений не происходит). - Указаны
+границы в виде мультимножеств.
+\end{frame}
+
+\begin{frame}{Пространство состояний для модели простого протокола
+передачи данных}
+\phantomsection\label{ux43fux440ux43eux441ux442ux440ux430ux43dux441ux442ux432ux43e-ux441ux43eux441ux442ux43eux44fux43dux438ux439-ux434ux43bux44f-ux43cux43eux434ux435ux43bux438-ux43fux440ux43eux441ux442ux43eux433ux43e-ux43fux440ux43eux442ux43eux43aux43eux43bux430-ux43fux435ux440ux435ux434ux430ux447ux438-ux434ux430ux43dux43dux44bux445}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6.png}
+\caption{Пространство состояний для модели простого протокола передачи
+данных}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+Реализовал в CPN tools простой протокол передачи данных и провести
+анализ.
+\end{frame}
