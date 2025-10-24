@@ -1,0 +1,492 @@
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Гэинэ Андрей
+\item
+  НФИбд-02-22
+\item
+  Российский университет дружбы народов
+\item
+  {[}1032219249@pfur.ru{]}
+\end{itemize}
+\end{frame}
+
+\section{Выполнение лабораторной
+работы}\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Реализовать модели обработки заказов и провести анализ результатов.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+Реализовать с помощью gpss:
+
+\begin{itemize}
+\tightlist
+\item
+  модель оформления заказов клиентов одним оператором;
+\item
+  построение гистограммы распределения заявок в очереди;
+\item
+  модель обслуживания двух типов заказов от клиентов в
+  интернет-магазине;
+\item
+  модель оформления заказов несколькими операторами.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Модель оформления заказов клиентов одним оператором}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux43aux43bux438ux435ux43dux442ux43eux432-ux43eux434ux43dux438ux43c-ux43eux43fux435ux440ux430ux442ux43eux440ux43eux43c}
+Порядок блоков в модели соответствует порядку фаз обработки заказа в
+реальной системе:
+
+\begin{enumerate}
+[1)]
+\tightlist
+\item
+  клиент оставляет заявку на заказ в интернет-магазине;
+\item
+  если необходимо, заявка от клиента ожидает в очереди освобождения
+  оператора для оформления заказа;
+\item
+  заявка от клиента принимается оператором для оформления заказа;
+\item
+  оператор оформляет заказ;
+\item
+  клиент получает подтверждение об оформлении заказа (покидает систему).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Модель оформления заказов клиентов одним оператором}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux43aux43bux438ux435ux43dux442ux43eux432-ux43eux434ux43dux438ux43c-ux43eux43fux435ux440ux430ux442ux43eux440ux43eux43c-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/1.png}
+\caption{Модель оформления заказов клиентов одним
+оператором}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчёт по модели оформления заказов в интернет-магазине}
+\phantomsection\label{ux43eux442ux447ux451ux442-ux43fux43e-ux43cux43eux434ux435ux43bux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux432-ux438ux43dux442ux435ux440ux43dux435ux442-ux43cux430ux433ux430ux437ux438ux43dux435}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/2.png}
+\caption{Отчёт по модели оформления заказов в
+интернет-магазине}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Результаты работы модели}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-ux440ux430ux431ux43eux442ux44b-ux43cux43eux434ux435ux43bux438}
+Результаты работы модели:
+
+\begin{itemize}
+\tightlist
+\item
+  модельное время в начале моделирования: \texttt{START\ TIME}=0.0;
+\item
+  абсолютное время или момент, когда счетчик завершений принял значение
+  0: \texttt{END\ TIME}=480.0;
+\item
+  количество блоков, использованных в текущей модели, к моменту
+  завершения моделирования: \texttt{BLOCKS}=9;
+\item
+  количество одноканальных устройств, использованных в модели к моменту
+  завершения моделирования: \texttt{FACILITIES}=1;
+\item
+  количество многоканальных устройств, использованных в текущей модели к
+  моменту завершения моделирования: \texttt{STORAGES}=0. Имена,
+  используемые в программе модели: \texttt{operator},
+  \texttt{operator\_q}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Упражнене. Изменение интервалов поступления заказов и
+время оформления клиентов}
+\phantomsection\label{ux443ux43fux440ux430ux436ux43dux435ux43dux435.-ux438ux437ux43cux435ux43dux435ux43dux438ux435-ux438ux43dux442ux435ux440ux432ux430ux43bux43eux432-ux43fux43eux441ux442ux443ux43fux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux438-ux432ux440ux435ux43cux44f-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux43aux43bux438ux435ux43dux442ux43eux432}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/3.png}
+\caption{Модель оформления заказов клиентов одним оператором с
+измененными интервалами заказов и времени оформления
+клиентов}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчёт по модели оформления заказов в интернет-магазине с
+измененными интервалами заказов и времени оформления клиентов}
+\phantomsection\label{ux43eux442ux447ux451ux442-ux43fux43e-ux43cux43eux434ux435ux43bux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux432-ux438ux43dux442ux435ux440ux43dux435ux442-ux43cux430ux433ux430ux437ux438ux43dux435-ux441-ux438ux437ux43cux435ux43dux435ux43dux43dux44bux43cux438-ux438ux43dux442ux435ux440ux432ux430ux43bux430ux43cux438-ux437ux430ux43aux430ux437ux43eux432-ux438-ux432ux440ux435ux43cux435ux43dux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux43aux43bux438ux435ux43dux442ux43eux432}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/4.png}
+\caption{Отчёт по модели оформления заказов в интернет-магазине с
+измененными интервалами заказов и времени оформления
+клиентов}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Результаты работы модели}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-ux440ux430ux431ux43eux442ux44b-ux43cux43eux434ux435ux43bux438-1}
+Результаты работы модели:
+
+\begin{itemize}
+\tightlist
+\item
+  модельное время в начале моделирования: \texttt{START\ TIME}=0.0;
+\item
+  абсолютное время или момент, когда счетчик завершений принял значение
+  0: \texttt{END\ TIME}=480.0;
+\item
+  количество блоков, использованных в текущей модели, к моменту
+  завершения моделирования: \texttt{BLOCKS}=9;
+\item
+  количество одноканальных устройств, использованных в модели к моменту
+  завершения моделирования: \texttt{FACILITIES}=1;
+\item
+  количество многоканальных устройств, использованных в текущей модели к
+  моменту завершения моделирования: \texttt{STORAGES}=0.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Построение гистограммы распределения заявок в
+очереди}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux435ux43dux438ux435-ux433ux438ux441ux442ux43eux433ux440ux430ux43cux43cux44b-ux440ux430ux441ux43fux440ux435ux434ux435ux43bux435ux43dux438ux44f-ux437ux430ux44fux432ux43eux43a-ux432-ux43eux447ux435ux440ux435ux434ux438}
+Требуется построить гистограмму распределения заявок, ожидающих
+обработки в очереди в примере из предыдущего упражнения. Для построения
+гистограммы необходимо сформировать таблицу значений заявок в очереди,
+записываемых в неё с определённой частотой.
+
+Команда описания такой таблицы \texttt{QTABLE} имеет следующий формат:
+\texttt{Name\ QTABLE\ A,B,C,D} Здесь \texttt{Name} -- метка,
+определяющая имя таблицы. Далее должны быть заданы операнды: \texttt{А}
+задается элемент данных, чьё частотное распределение будет заноситься в
+таблицу (может быть именем, выражением в скобках или системным числовым
+атрибутом (СЧА)); \texttt{B} задается верхний предел первого частотного
+интервала; \texttt{С} задает ширину частотного интервала --- разницу
+между верхней и нижней границей каждого частотного класса; \texttt{D}
+задаёт число частотных интервалов.
+\end{frame}
+
+\begin{frame}{Построение гистограммы распределения заявок в очереди}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux435ux43dux438ux435-ux433ux438ux441ux442ux43eux433ux440ux430ux43cux43cux44b-ux440ux430ux441ux43fux440ux435ux434ux435ux43bux435ux43dux438ux44f-ux437ux430ux44fux432ux43eux43a-ux432-ux43eux447ux435ux440ux435ux434ux438-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/5.png}
+\caption{Построение гистограммы распределения заявок в
+очереди}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчёт по модели оформления заказов в интернет-магазине при
+построении гистограммы распределения заявок в очереди}
+\phantomsection\label{ux43eux442ux447ux451ux442-ux43fux43e-ux43cux43eux434ux435ux43bux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux432-ux438ux43dux442ux435ux440ux43dux435ux442-ux43cux430ux433ux430ux437ux438ux43dux435-ux43fux440ux438-ux43fux43eux441ux442ux440ux43eux435ux43dux438ux438-ux433ux438ux441ux442ux43eux433ux440ux430ux43cux43cux44b-ux440ux430ux441ux43fux440ux435ux434ux435ux43bux435ux43dux438ux44f-ux437ux430ux44fux432ux43eux43a-ux432-ux43eux447ux435ux440ux435ux434ux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6.png}
+\caption{Отчёт по модели оформления заказов в интернет-магазине при
+построении гистограммы распределения заявок в очереди}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Результаты работы модели}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-ux440ux430ux431ux43eux442ux44b-ux43cux43eux434ux435ux43bux438-2}
+Результаты работы модели:
+
+\begin{itemize}
+\tightlist
+\item
+  модельное время в начале моделирования: \texttt{START\ TIME}=0.0;
+\item
+  абсолютное время или момент, когда счетчик завершений принял значение
+  0: \texttt{END\ TIME}=353.895;
+\item
+  количество блоков, использованных в текущей модели, к моменту
+  завершения моделирования: \texttt{BLOCKS}=10;
+\item
+  количество одноканальных устройств, использованных в модели к моменту
+  завершения моделирования: \texttt{FACILITIES}=1;
+\item
+  количество многоканальных устройств, использованных в текущей модели к
+  моменту завершения моделирования: \texttt{STORAGES}=0.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Построение гистограммы}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux435ux43dux438ux435-ux433ux438ux441ux442ux43eux433ux440ux430ux43cux43cux44b}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/7.png}
+\caption{Гистограмма распределения заявок в очереди}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ гистограммы}
+\phantomsection\label{ux430ux43dux430ux43bux438ux437-ux433ux438ux441ux442ux43eux433ux440ux430ux43cux43cux44b}
+Частотность разделена на 15 частотных интервалов с шагом 2 и началом в
+0, как мы и задали. Наибольшее количество заявок (17) обрабатывалось
+10-12 минут, 14 заявок -- 12-14 минут, 12 заявок -- 8-10 минут, в
+остальных диапазонах 0-4 заявок.
+\end{frame}
+
+\begin{frame}[fragile]{Модель обслуживания двух типов заказов от
+клиентов в интернет-магазине}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux431ux441ux43bux443ux436ux438ux432ux430ux43dux438ux44f-ux434ux432ux443ux445-ux442ux438ux43fux43eux432-ux437ux430ux43aux430ux437ux43eux432-ux43eux442-ux43aux43bux438ux435ux43dux442ux43eux432-ux432-ux438ux43dux442ux435ux440ux43dux435ux442-ux43cux430ux433ux430ux437ux438ux43dux435}
+Необходимо реализовать отличие в оформлении обычных заказов и заказов с
+дополнительным пакетом услуг. Такую систему можно промоделировать с
+помощью двух сегментов. Один из них моделирует оформление обычных
+заказов, а второй -- заказов с дополнительным пакетом услуг. В каждом из
+сегментов пара \texttt{QUEUE–DEPART} должна описывать одну и ту же
+очередь, а пара блоков \texttt{SEIZE–RELEASE} должна описывать в каждом
+из двух сегментов одно и то же устройство и моделировать работу
+оператора.
+\end{frame}
+
+\begin{frame}{Модель обслуживания двух типов заказов от клиентов в
+интернет-магазине}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux431ux441ux43bux443ux436ux438ux432ux430ux43dux438ux44f-ux434ux432ux443ux445-ux442ux438ux43fux43eux432-ux437ux430ux43aux430ux437ux43eux432-ux43eux442-ux43aux43bux438ux435ux43dux442ux43eux432-ux432-ux438ux43dux442ux435ux440ux43dux435ux442-ux43cux430ux433ux430ux437ux438ux43dux435-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/8.png}
+\caption{Модель обслуживания двух типов заказов от клиентов в
+интернет-магазине}\label{fig:008}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчёт по модели оформления заказов двух типов}
+\phantomsection\label{ux43eux442ux447ux451ux442-ux43fux43e-ux43cux43eux434ux435ux43bux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux434ux432ux443ux445-ux442ux438ux43fux43eux432}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/9.png}
+\caption{Отчёт по модели оформления заказов двух типов}\label{fig:009}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Результаты работы модели}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-ux440ux430ux431ux43eux442ux44b-ux43cux43eux434ux435ux43bux438-3}
+Результаты работы модели:
+
+\begin{itemize}
+\tightlist
+\item
+  модельное время в начале моделирования: \texttt{START\ TIME}=0.0;
+\item
+  абсолютное время или момент, когда счетчик завершений принял значение
+  0: \texttt{END\ TIME}=480.0;
+\item
+  количество блоков, использованных в текущей модели, к моменту
+  завершения моделирования: \texttt{BLOCKS}=17;
+\item
+  количество одноканальных устройств, использованных в модели к моменту
+  завершения моделирования: \texttt{FACILITIES}=1;
+\item
+  количество многоканальных устройств, использованных в текущей модели к
+  моменту завершения моделирования: \texttt{STORAGES}=0.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Упражнение}
+\phantomsection\label{ux443ux43fux440ux430ux436ux43dux435ux43dux438ux435}
+Скорректируем модель так, чтобы учитывалось условие, что число заказов с
+дополнительным пакетом услуг составляет 30\% от общего числа заказов.
+
+Будем использовать один блок \texttt{order}, а разделим типы заявок с
+помощью переходов оператором \texttt{TRANSFER}. Каждый заказ
+обрабатывается \(10 \pm 2\) минуты, после этого зададим оператор
+\texttt{TRANSFER}, в котором укажем, что с вероятностью 0.7 происходит
+обработка заявки (переход к блоку \texttt{noextra} \texttt{RELEASE}
+operator), а с вероятностью 0.3 дополнительно заказ обрабатывается еще
+\(5 \pm 2\) минуты (переход к блоку \texttt{extra} \texttt{ADVANCE} 5,2)
+и только после этого является обработанным
+\end{frame}
+
+\begin{frame}{Модель обслуживания двух типов заказов с условием, что
+число заказов с дополнительным пакетом услуг составляет 30\% от общего
+числа заказов}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux431ux441ux43bux443ux436ux438ux432ux430ux43dux438ux44f-ux434ux432ux443ux445-ux442ux438ux43fux43eux432-ux437ux430ux43aux430ux437ux43eux432-ux441-ux443ux441ux43bux43eux432ux438ux435ux43c-ux447ux442ux43e-ux447ux438ux441ux43bux43e-ux437ux430ux43aux430ux437ux43eux432-ux441-ux434ux43eux43fux43eux43bux43dux438ux442ux435ux43bux44cux43dux44bux43c-ux43fux430ux43aux435ux442ux43eux43c-ux443ux441ux43bux443ux433-ux441ux43eux441ux442ux430ux432ux43bux44fux435ux442-30-ux43eux442-ux43eux431ux449ux435ux433ux43e-ux447ux438ux441ux43bux430-ux437ux430ux43aux430ux437ux43eux432}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/10.png}
+\caption{Модель обслуживания двух типов заказов с условием, что число
+заказов с дополнительным пакетом услуг составляет 30\% от общего числа
+заказов}\label{fig:010}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчёт по модели оформления заказов двух типов заказов}
+\phantomsection\label{ux43eux442ux447ux451ux442-ux43fux43e-ux43cux43eux434ux435ux43bux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux434ux432ux443ux445-ux442ux438ux43fux43eux432-ux437ux430ux43aux430ux437ux43eux432}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/11.png}
+\caption{Отчёт по модели оформления заказов двух типов
+заказов}\label{fig:011}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Результаты работы модели}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-ux440ux430ux431ux43eux442ux44b-ux43cux43eux434ux435ux43bux438-4}
+Результаты работы модели:
+
+\begin{itemize}
+\tightlist
+\item
+  модельное время в начале моделирования: \texttt{START\ TIME}=0.0;
+\item
+  абсолютное время или момент, когда счетчик завершений принял значение
+  0: \texttt{END\ TIME}=480.0;
+\item
+  количество блоков, использованных в текущей модели, к моменту
+  завершения моделирования: \texttt{BLOCKS}=11;
+\item
+  количество одноканальных устройств, использованных в модели к моменту
+  завершения моделирования: \texttt{FACILITIES}=1;
+\item
+  количество многоканальных устройств, использованных в текущей модели к
+  моменту завершения моделирования: \texttt{STORAGES}=0.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Модель оформления заказов несколькими
+операторами}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux43dux435ux441ux43aux43eux43bux44cux43aux438ux43cux438-ux43eux43fux435ux440ux430ux442ux43eux440ux430ux43cux438}
+В интернет-магазине заказы принимают 4 оператора. Интервалы поступления
+заказов распределены равномерно с интервалом \(5 \pm 2\) мин. Время
+оформления заказа каждым оператором также распределено равномерно на
+интервале \(10 \pm 2\) мин. обработка поступивших заказов происходит в
+порядке очереди (FIFO). Требуется определить характеристики очереди
+заявок на оформление заказов при условии, что заявка может
+обрабатываться одним из 4-х операторов в течение восьмичасового рабочего
+дня
+
+С помощью строки \texttt{operator\ STORAGE\ 4} указываем, что у нас 4
+оператора, затем к обычной процедуре генерации и обработки заявки
+добавляется, что заявку обрабатывает один оператор \texttt{operator,1},
+сегмент моделирования времени остается без изменений
+\end{frame}
+
+\begin{frame}{Модель оформления заказов несколькими операторами}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux43dux435ux441ux43aux43eux43bux44cux43aux438ux43cux438-ux43eux43fux435ux440ux430ux442ux43eux440ux430ux43cux438-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/12.png}
+\caption{Модель оформления заказов несколькими
+операторами}\label{fig:012}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет по модели оформления заказов несколькими
+операторами}
+\phantomsection\label{ux43eux442ux447ux435ux442-ux43fux43e-ux43cux43eux434ux435ux43bux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux43dux435ux441ux43aux43eux43bux44cux43aux438ux43cux438-ux43eux43fux435ux440ux430ux442ux43eux440ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/13.png}
+\caption{Отчет по модели оформления заказов несколькими
+операторами}\label{fig:013}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Результаты работы модели}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-ux440ux430ux431ux43eux442ux44b-ux43cux43eux434ux435ux43bux438-5}
+Результаты работы модели:
+
+\begin{itemize}
+\tightlist
+\item
+  модельное время в начале моделирования: \texttt{START\ TIME}=0.0;
+\item
+  абсолютное время или момент, когда счетчик завершений принял значение
+  0: \texttt{END\ TIME}=480.0;
+\item
+  количество блоков, использованных в текущей модели, к моменту
+  завершения моделирования: \texttt{BLOCKS}=9;
+\item
+  количество одноканальных устройств, использованных в модели к моменту
+  завершения моделирования: \texttt{FACILITIES}=1;
+\item
+  количество многоканальных устройств, использованных в текущей модели к
+  моменту завершения моделирования: \texttt{STORAGES}=0.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Упражнение}
+\phantomsection\label{ux443ux43fux440ux430ux436ux43dux435ux43dux438ux435-1}
+Изменим модель: требуется учесть в ней возможные отказы клиентов от
+заказа -- когда при подаче заявки на заказ клиент видит в очереди более
+двух других заявок, он отказывается от подачи заявки, то есть
+отказывается от обслуживания (используем блок \texttt{TEST} и
+стандартный числовой атрибут Qj текущей длины очереди j).
+
+Добавим строчку \texttt{TEST\ LE\ Q\$operator\_q,2}, которая проверяет
+больше ли в очереди клиентов, чем два, если нет -- клиент поступает на
+обработку, иначе уходит. Также в ранее проанализированном отчете видно,
+что клиентов в очереди не было больше 2, поэтому увеличим время
+обработки заказов до \(30 \pm 2\) мин., чтобы проверить результаты
+изменений модели
+\end{frame}
+
+\begin{frame}{Модель оформления заказов несколькими операторами с учетом
+отказов клиентов}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux43dux435ux441ux43aux43eux43bux44cux43aux438ux43cux438-ux43eux43fux435ux440ux430ux442ux43eux440ux430ux43cux438-ux441-ux443ux447ux435ux442ux43eux43c-ux43eux442ux43aux430ux437ux43eux432-ux43aux43bux438ux435ux43dux442ux43eux432}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/14.png}
+\caption{Модель оформления заказов несколькими операторами с учетом
+отказов клиентов}\label{fig:014}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет по модели оформления заказов несколькими операторами
+с учетом отказов клиентов}
+\phantomsection\label{ux43eux442ux447ux435ux442-ux43fux43e-ux43cux43eux434ux435ux43bux438-ux43eux444ux43eux440ux43cux43bux435ux43dux438ux44f-ux437ux430ux43aux430ux437ux43eux432-ux43dux435ux441ux43aux43eux43bux44cux43aux438ux43cux438-ux43eux43fux435ux440ux430ux442ux43eux440ux430ux43cux438-ux441-ux443ux447ux435ux442ux43eux43c-ux43eux442ux43aux430ux437ux43eux432-ux43aux43bux438ux435ux43dux442ux43eux432}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/15.png}
+\caption{Отчет по модели оформления заказов несколькими операторами с
+учетом отказов клиентов}\label{fig:015}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Результаты работы модели}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-ux440ux430ux431ux43eux442ux44b-ux43cux43eux434ux435ux43bux438-6}
+Результаты работы модели:
+
+\begin{itemize}
+\tightlist
+\item
+  модельное время в начале моделирования: \texttt{START\ TIME}=0.0;
+\item
+  абсолютное время или момент, когда счетчик завершений принял значение
+  0: \texttt{END\ TIME}=480.0;
+\item
+  количество блоков, использованных в текущей модели, к моменту
+  завершения моделирования: \texttt{BLOCKS}=9;
+\item
+  количество одноканальных устройств, использованных в модели к моменту
+  завершения моделирования: \texttt{FACILITIES}=1;
+\item
+  количество многоканальных устройств, использованных в текущей модели к
+  моменту завершения моделирования: \texttt{STORAGES}=0.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+В результате была реализована с помощью gpss:
+
+\begin{itemize}
+\tightlist
+\item
+  модель оформления заказов клиентов одним оператором;
+\item
+  построение гистограммы распределения заявок в очереди;
+\item
+  модель обслуживания двух типов заказов от клиентов в
+  интернет-магазине;
+\item
+  модель оформления заказов несколькими операторами.
+\end{itemize}
+\end{frame}

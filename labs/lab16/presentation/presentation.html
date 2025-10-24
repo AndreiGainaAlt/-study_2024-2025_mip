@@ -1,0 +1,342 @@
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Гэинэ Андрей
+\item
+  НФИбд-02-22
+\item
+  Российский университет дружбы народов
+\item
+  {[}1032219249@pfur.ru{]}
+\end{itemize}
+\end{frame}
+
+\section{Выполнение лабораторной
+работы}\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Реализовать с помощью gpss модель двух стратегий обслуживания и оценить
+оптимальные параметры.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+Реализовать с помощью gpss:
+
+\begin{itemize}
+\tightlist
+\item
+  модель с двумя очередями;
+\item
+  модель с одной очередью;
+\item
+  изменить модели, чтобы определить оптимальное число пропускных
+  пунктов.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Постановка задачи}
+\phantomsection\label{ux43fux43eux441ux442ux430ux43dux43eux432ux43aux430-ux437ux430ux434ux430ux447ux438}
+На пограничном контрольно-пропускном пункте транспорта имеются 2 пункта
+пропуска. Интервалы времени между поступлением автомобилей имеют
+экспоненциальное распределение со средним значением \(\mu\). Время
+прохождения автомобилями пограничного контроля имеет равномерное
+распределение на интервале \([a, b]\). Предлагается две стратегии
+обслуживания прибывающих автомобилей:
+
+\begin{enumerate}
+[1)]
+\tightlist
+\item
+  автомобили образуют две очереди и обслуживаются соответствующими
+  пунктами пропуска;
+\item
+  автомобили образуют одну общую очередь и обслуживаются освободившимся
+  пунктом пропуска. Исходные данные: \(\mu\) = 1, 75 мин, \(a\) = 1 мин,
+  \(b\) = 7 мин.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Построение модели}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux435ux43dux438ux435-ux43cux43eux434ux435ux43bux438}
+Целью моделирования является определение:
+
+\begin{itemize}
+\tightlist
+\item
+  характеристик качества обслуживания автомобилей, в частности, средних
+  длин очередей; среднего времени обслуживания автомобиля; среднего
+  времени пребывания автомобиля на пункте пропуска;
+\item
+  наилучшей стратегии обслуживания автомобилей на пункте пограничного
+  контроля;
+\item
+  оптимального количества пропускных пунктов.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Построение модели}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux435ux43dux438ux435-ux43cux43eux434ux435ux43bux438-1}
+В качестве критериев, используемых для сравнения стратегий обслуживания
+автомобилей, выберем:
+
+\begin{itemize}
+\tightlist
+\item
+  коэффициенты загрузки системы;
+\item
+  максимальные и средние длины очередей;
+\item
+  средние значения времени ожидания обслуживания.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Прибывающие автомобили образуют две очереди и обсл.
+соответств. пропускными пунктами}
+\phantomsection\label{ux43fux440ux438ux431ux44bux432ux430ux44eux449ux438ux435-ux430ux432ux442ux43eux43cux43eux431ux438ux43bux438-ux43eux431ux440ux430ux437ux443ux44eux442-ux434ux432ux435-ux43eux447ux435ux440ux435ux434ux438-ux438-ux43eux431ux441ux43b.-ux441ux43eux43eux442ux432ux435ux442ux441ux442ux432.-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/1.png}
+\caption{Прибывающие автомобили образуют две очереди и обсл. соответств.
+пропускными пунктами}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет. Прибывающие автомобили образуют две очереди и обсл.
+соответств. пропускными пунктами}
+\phantomsection\label{ux43eux442ux447ux435ux442.-ux43fux440ux438ux431ux44bux432ux430ux44eux449ux438ux435-ux430ux432ux442ux43eux43cux43eux431ux438ux43bux438-ux43eux431ux440ux430ux437ux443ux44eux442-ux434ux432ux435-ux43eux447ux435ux440ux435ux434ux438-ux438-ux43eux431ux441ux43b.-ux441ux43eux43eux442ux432ux435ux442ux441ux442ux432.-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/2.png}
+\caption{Отчет. Прибывающие автомобили образуют две очереди и обсл.
+соответств. пропускными пунктами}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Прибывающие автомобили образуют одну очередь и обсл.
+освободившимися пропускными пунктами}
+\phantomsection\label{ux43fux440ux438ux431ux44bux432ux430ux44eux449ux438ux435-ux430ux432ux442ux43eux43cux43eux431ux438ux43bux438-ux43eux431ux440ux430ux437ux443ux44eux442-ux43eux434ux43dux443-ux43eux447ux435ux440ux435ux434ux44c-ux438-ux43eux431ux441ux43b.-ux43eux441ux432ux43eux431ux43eux434ux438ux432ux448ux438ux43cux438ux441ux44f-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/3.png}
+\caption{Прибывающие автомобили образуют одну очередь и обсл.
+освободившимися пропускными пунктами}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет. Прибывающие автомобили образуют одну очередь и
+обсл. освободившимися пропускными пунктами}
+\phantomsection\label{ux43eux442ux447ux435ux442.-ux43fux440ux438ux431ux44bux432ux430ux44eux449ux438ux435-ux430ux432ux442ux43eux43cux43eux431ux438ux43bux438-ux43eux431ux440ux430ux437ux443ux44eux442-ux43eux434ux43dux443-ux43eux447ux435ux440ux435ux434ux44c-ux438-ux43eux431ux441ux43b.-ux43eux441ux432ux43eux431ux43eux434ux438ux432ux448ux438ux43cux438ux441ux44f-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/4.png}
+\caption{Отчет. Прибывающие автомобили образуют одну очередь и обсл.
+освободившимися пропускными пунктами}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Сравнение стратегий}
+\phantomsection\label{ux441ux440ux430ux432ux43dux435ux43dux438ux435-ux441ux442ux440ux430ux442ux435ux433ux438ux439}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3784}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1757}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1216}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1351}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1892}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Показатель
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+стратегия 1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+стратегия 2
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+& пункт 1 & пункт 2 & в целом & \\
+Поступило автомобилей & 2928 & 2925 & 5853 & 5719 \\
+Обслужено автомобилей & 2540 & 2536 & 5076 & 5049 \\
+Коэффициент загрузки & 0,997 & 0,996 & 0,9965 & 1 \\
+Максимальная длина очереди & 393 & 393 & 786 & 668 \\
+Средняя длина очереди & 187,098 & 187,114 & 374,212 & 344,466 \\
+Среднее время ожидания & 644,107 & 644,823 & 644,465 & 607,138 \\
+\bottomrule\noalign{}
+\end{longtable}
+\end{frame}
+
+\begin{frame}{Сравнение стратегий}
+\phantomsection\label{ux441ux440ux430ux432ux43dux435ux43dux438ux435-ux441ux442ux440ux430ux442ux435ux433ux438ux439-1}
+Анализ результатов моделирования двух систем показывает, что первая
+модель способна обработать большее количество автомобилей. Однако стоит
+отметить, что во второй модели разница между числом поступивших и
+обслуженных машин меньше, что свидетельствует о более эффективной работе
+системы. Кроме того, коэффициент загрузки для второй модели достигает 1,
+что означает полное использование всех пропускных пунктов без простоев.
+Также показатели, связанные с длиной очередей и временем ожидания, во
+второй стратегии оказались ниже. Это позволяет считать вторую стратегию
+более предпочтительной.
+\end{frame}
+
+\begin{frame}{Оптимизация модели двух стратегий обслуживания}
+\phantomsection\label{ux43eux43fux442ux438ux43cux438ux437ux430ux446ux438ux44f-ux43cux43eux434ux435ux43bux438-ux434ux432ux443ux445-ux441ux442ux440ux430ux442ux435ux433ux438ux439-ux43eux431ux441ux43bux443ux436ux438ux432ux430ux43dux438ux44f}
+Изменим модели под следующие критерии:
+
+\begin{itemize}
+\item
+  коэффициента загрузки прпускных пунктов принадлежат интервалу {[}0.5;
+  0.95{]};
+\item
+  среднее число автомобилей, одновременно находящихся на контрольно
+  пропускном пункте, не должно превышать 3;
+\item
+  среднее время ожидания обслуживания не должно превышать 4 мин.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Модель с одним пунктам (для обеи стратегий)}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux441-ux43eux434ux43dux438ux43c-ux43fux443ux43dux43aux442ux430ux43c-ux434ux43bux44f-ux43eux431ux435ux438-ux441ux442ux440ux430ux442ux435ux433ux438ux439}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/5.png}
+\caption{Отчет. Прибывающие автомобили образуют одну очередь и обсл.
+освободившимися пропускными пунктами}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет. Модель с одним пунктам}
+\phantomsection\label{ux43eux442ux447ux435ux442.-ux43cux43eux434ux435ux43bux44c-ux441-ux43eux434ux43dux438ux43c-ux43fux443ux43dux43aux442ux430ux43c}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6.png}
+\caption{Отчет. Модель с одним пунктам}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ}
+\phantomsection\label{ux430ux43dux430ux43bux438ux437}
+Здесь модель не проходит ни по одному из критериев, тк коэфиициенты
+загрузки, размер очереди и среднее время ожидания больше.
+\end{frame}
+
+\begin{frame}{Модель для первой стратегии с 3 пропускными пунктами}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux43fux435ux440ux432ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-3-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/7.png}
+\caption{Модель с тремя пунктами}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет. Модель для первой стратегии с 3 пропускными
+пунктами}
+\phantomsection\label{ux43eux442ux447ux435ux442.-ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux43fux435ux440ux432ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-3-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/8.png}
+\caption{Отчет. Модель с тремя пунктами}\label{fig:008}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ}
+\phantomsection\label{ux430ux43dux430ux43bux438ux437-1}
+Здесь сред кол-во автомобилей в очереди меньше 3 и коэффициента загрузки
+в нужном диапазоне. Однако сред время ожидания больше 4.
+\end{frame}
+
+\begin{frame}{Модель для первой стратегии с 4 пропускными пунктами}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux43fux435ux440ux432ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-4-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/9.png}
+\caption{Модель с четырьмя пунктам}\label{fig:009}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет. Модель для первой стратегии с 4 пропускными
+пунктами}
+\phantomsection\label{ux43eux442ux447ux435ux442.-ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux43fux435ux440ux432ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-4-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/10.png}
+\caption{Отчет. Модель с четырьмя пунктам}\label{fig:010}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ}
+\phantomsection\label{ux430ux43dux430ux43bux438ux437-2}
+В этом случае все критерии выполнены, поэтому 4 пункта являются
+оптимальным количеством для первой стратегии.
+\end{frame}
+
+\begin{frame}{Модель для второй стратегии с 3 пропускными пунктами}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux432ux442ux43eux440ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-3-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/11.png}
+\caption{Модель для второй стратегии с 3 пропускными
+пунктами}\label{fig:011}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет. Модель для второй стратегии с 3 пропускными
+пунктами}
+\phantomsection\label{ux43eux442ux447ux435ux442.-ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux432ux442ux43eux440ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-3-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/12.png}
+\caption{Отчет. Модель для второй стратегии с 3 пропускными
+пунктами}\label{fig:012}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ}
+\phantomsection\label{ux430ux43dux430ux43bux438ux437-3}
+Все критерии выполняются =\textgreater{} модель оптимальна.
+\end{frame}
+
+\begin{frame}{Модель для второй стратегии с 4 пропускными пунктами}
+\phantomsection\label{ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux432ux442ux43eux440ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-4-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/13.png}
+\caption{Модель для второй стратегии с 4 пропускными
+пунктами}\label{fig:013}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Отчет. Модель для второй стратегии с 4 пропускными
+пунктами}
+\phantomsection\label{ux43eux442ux447ux435ux442.-ux43cux43eux434ux435ux43bux44c-ux434ux43bux44f-ux432ux442ux43eux440ux43eux439-ux441ux442ux440ux430ux442ux435ux433ux438ux438-ux441-4-ux43fux440ux43eux43fux443ux441ux43aux43dux44bux43cux438-ux43fux443ux43dux43aux442ux430ux43cux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/14.png}
+\caption{Отчет. Модель для второй стратегии с 4 пропускными
+пунктами}\label{fig:014}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ}
+\phantomsection\label{ux430ux43dux430ux43bux438ux437-4}
+В данной ситуации все критерии соблюдены, при этом время ожидания и
+среднее количество автомобилей оказываются ниже, чем во втором варианте
+стратегии с тремя пунктами. Однако уровень загрузки также снижается, что
+говорит о возможной избыточности четвёртого пункта пропуска.
+\end{frame}
+
+\begin{frame}{Анализ}
+\phantomsection\label{ux430ux43dux430ux43bux438ux437-5}
+Таким образом, на основе проведённого анализа можно заключить, что
+оптимальное количество пропускных пунктов составляет три при втором типе
+обслуживания и четыре при первом.
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+Реализовал с помощью gpss модель двух стратегий обслуживания и оценить
+оптимальные параметры.
+\end{frame}
