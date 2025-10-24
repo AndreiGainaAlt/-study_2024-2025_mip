@@ -1,0 +1,278 @@
+\begin{frame}{Докладчик}
+\phantomsection\label{ux434ux43eux43aux43bux430ux434ux447ux438ux43a}
+\begin{itemize}
+\tightlist
+\item
+  Гэинэ Андрей
+\item
+  НФИбд-02-22
+\item
+  Российский университет дружбы народов
+\item
+  {[}1032219249@pfur.ru{]}
+\end{itemize}
+\end{frame}
+
+\section{Выполнение лабораторной
+работы}\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux43bux430ux431ux43eux440ux430ux442ux43eux440ux43dux43eux439-ux440ux430ux431ux43eux442ux44b}
+
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Реализовать с помощью gpss модель работы вычислительного центра,
+аэропорта, морского порта.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+Реализовать с помощью gpss:
+
+\begin{itemize}
+\tightlist
+\item
+  модель работы вычислительного центра;
+\item
+  модель работы аэропорта;
+\item
+  модель работы морского порта.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Моделирование работы вычислительной системы}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux432ux44bux447ux438ux441ux43bux438ux442ux435ux43bux44cux43dux43eux439-ux441ux438ux441ux442ux435ux43cux44b}
+На вычислительном центре в обработку принимаются три класса заданий А, В
+и С. Исходя из наличия оперативной памяти ЭВМ задания классов А и В
+могут решаться одновременно, а задания класса С монополизируют ЭВМ.
+Задания класса А поступают через 20 ± 5 мин, класса В --- через 20 ± 10
+мин, класса С --- через 28 ± 5 мин и требуют для выполнения: класс А ---
+20 ± 5 мин, класс В --- 21 ± 3 мин, класс С --- 28 ± 5 мин. Задачи
+класса С загружаются в ЭВМ, если она полностью свободна. Задачи классов
+А и В могут дозагружаться к решающей задаче. Смоделировать работу ЭВМ за
+80 ч. Определить её загрузку.
+\end{frame}
+
+\begin{frame}{Моделирование работы вычислительной системы. Код}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux432ux44bux447ux438ux441ux43bux438ux442ux435ux43bux44cux43dux43eux439-ux441ux438ux441ux442ux435ux43cux44b.-ux43aux43eux434}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/1.png}
+\caption{Моделирование работы вычислительной системы.
+Код}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Моделирование работы вычислительной системы. Код}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux432ux44bux447ux438ux441ux43bux438ux442ux435ux43bux44cux43dux43eux439-ux441ux438ux441ux442ux435ux43cux44b.-ux43aux43eux434-1}
+Зададим хранилище ram на две заявки. Запишем три блока: первые два блока
+- классы А и B (один элемент ram), третий - класс C (два элемента ram).
+Также сделаем блок времени, генерирующий 80 часов (4800 минут).
+\end{frame}
+
+\begin{frame}{Моделирование работы вычислительной системы. Отчет}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux432ux44bux447ux438ux441ux43bux438ux442ux435ux43bux44cux43dux43eux439-ux441ux438ux441ux442ux435ux43cux44b.-ux43eux442ux447ux435ux442}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/2.png}
+\caption{Получим следующий отчет (ч1)}\label{fig:002}
+\end{figure}
+
+Загруженность системы равна 0.994
+\end{frame}
+
+\begin{frame}{Моделирование работы вычислительной системы. Отчет}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux432ux44bux447ux438ux441ux43bux438ux442ux435ux43bux44cux43dux43eux439-ux441ux438ux441ux442ux435ux43cux44b.-ux43eux442ux447ux435ux442-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/3.png}
+\caption{Получим следующий отчет (ч2)}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Моделирование работы аэропорта}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux430ux44dux440ux43eux43fux43eux440ux442ux430}
+Самолёты прибывают для посадки в район аэропорта каждые 10 ± 5 мин. Если
+взлетно-посадочная полоса свободна, прибывший самолёт получает
+разрешение на посадку. Если полоса занята, самолет выполняет полет по
+кругу и возвращается в аэропорт каждые 5 мин. Если после пятого круга
+самолет не получает разрешения на посадку, он отправляется на запасной
+аэродром. В аэропорту через каждые 10 ± 2 мин к взлетно-посадочной
+полосе выруливают готовые к взлёту самолёты и получают разрешение на
+взлёт, если полоса свободна. Для взлета и посадки самолёты занимают
+полосу ровно на 2 мин. Если при свободной полосе одновременно один
+самолёт прибывает для посадки, а другой --- для взлёта, то полоса
+предоставляется взлетающей машине. Требуется: -- выполнить моделирование
+работы аэропорта в течение суток; -- подсчитать количество самолётов,
+которые взлетели, сели и были направлены на запасной аэродром; --
+определить коэффициент загрузки взлетно-посадочной полосы.
+\end{frame}
+
+\begin{frame}{Моделирование работы аэропорта. Код}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux430ux44dux440ux43eux43fux43eux440ux442ux430.-ux43aux43eux434}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/4.png}
+\caption{Моделирование работы аэропорта. Код}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Моделирование работы аэропорта. Код}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux430ux44dux440ux43eux43fux43eux440ux442ux430.-ux43aux43eux434-1}
+Блок для взлетающих самолетов имеет приоритет 2, для прилетающих
+приоритет 1 (чем выше значение, тем выше приоритет). Затем идет
+проверка. Если полоса пустая, то заявка отбрасывается, иначе происходит
+переход в блок ожидания. При ожидании заявка попадает в цикл 5 раз.
+Каждый раз проверяется не освободилась ли полоса. Если освободилась -
+переход в блок обработки. Иначе самолет обрабатывается обработчиком
+отправки на запасной аэродром. Время зададим равное 1440 минут (одни
+сутки).
+\end{frame}
+
+\begin{frame}{Моделирование работы аэропорта. Отчет}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux430ux44dux440ux43eux43fux43eux440ux442ux430.-ux43eux442ux447ux435ux442}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/5.png}
+\caption{Получим следующий отчет (ч1)}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Моделирование работы аэропорта. Отчет}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux430ux44dux440ux43eux43fux43eux440ux442ux430.-ux43eux442ux447ux435ux442-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/6.png}
+\caption{Получим следующий отчет (ч2)}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Моделирование работы аэропорта. Отчет}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux430ux44dux440ux43eux43fux43eux440ux442ux430.-ux43eux442ux447ux435ux442-2}
+Взлетело: 142 самолета
+
+Село: 146
+
+Улетели на запасной аэродром: 0
+
+Улетело в запасной аэродром 0, тк процессы обработки длятся всего 2
+минуты, что намного быстрее, чем генерация новых самолетов. Коэффициент
+загрузки полосы равен 0.4 (большую часть времени свободна).
+\end{frame}
+
+\begin{frame}{Моделирование работы морского порта}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux43cux43eux440ux441ux43aux43eux433ux43e-ux43fux43eux440ux442ux430}
+Морские суда прибывают в порт каждые {[}a ± δ{]} часов. В порту имеется
+N причалов. Каждый корабль по длине занимает M причалов и находится в
+порту {[}b ± ε{]} часов. Требуется построить GPSS-модель для анализа
+работы морского порта в течение полугода, определить оптимальное
+количество причалов для эффективной работы порта. Исходные данные: 1) a
+= 20 ч, δ = 5 ч, b = 10 ч, ε = 3 ч, N = 10, M = 3; 2) a = 30 ч, δ = 10
+ч, b = 8 ч, ε = 4 ч, N = 6, M = 2.
+\end{frame}
+
+\begin{frame}{Построим модель работы первого варианта в gpss}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux438ux43c-ux43cux43eux434ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b-ux43fux435ux440ux432ux43eux433ux43e-ux432ux430ux440ux438ux430ux43dux442ux430-ux432-gpss}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/7.png}
+\caption{Моделирование работы первого варианта. Код}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получим следующий отчет}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43c-ux441ux43bux435ux434ux443ux44eux449ux438ux439-ux43eux442ux447ux435ux442}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/8.png}
+\caption{Моделирование работы первого варианта. Отчет}\label{fig:008}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Моделирование работы первого варианта. Отчет}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux43fux435ux440ux432ux43eux433ux43e-ux432ux430ux440ux438ux430ux43dux442ux430.-ux43eux442ux447ux435ux442}
+При запуске с 10ю причалами заметим, что судна обрабатываются быстрее,
+чем успевают приходить новые, тк очередь не набирается. Более того,
+загруженность причалов очень низкая. Значит, установив наименьшее
+возможное число портов, равное 3, получим оптимальный результат.
+\end{frame}
+
+\begin{frame}{Построим модель оптимальной работы первого варианта в
+gpss}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux438ux43c-ux43cux43eux434ux435ux43bux44c-ux43eux43fux442ux438ux43cux430ux43bux44cux43dux43eux439-ux440ux430ux431ux43eux442ux44b-ux43fux435ux440ux432ux43eux433ux43e-ux432ux430ux440ux438ux430ux43dux442ux430-ux432-gpss}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/9.png}
+\caption{Моделирование оптимальной работы первого варианта.
+Код}\label{fig:009}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получим следующий отчет}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43c-ux441ux43bux435ux434ux443ux44eux449ux438ux439-ux43eux442ux447ux435ux442-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/10.png}
+\caption{Моделирование оптимальной работы первого варианта.
+Отчет}\label{fig:010}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Построим модель работы второго варианта в gpss}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux438ux43c-ux43cux43eux434ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b-ux432ux442ux43eux440ux43eux433ux43e-ux432ux430ux440ux438ux430ux43dux442ux430-ux432-gpss}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/11.png}
+\caption{Моделирование работы второго варианта. Код}\label{fig:011}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получим следующий отчет}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43c-ux441ux43bux435ux434ux443ux44eux449ux438ux439-ux43eux442ux447ux435ux442-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/12.png}
+\caption{Моделирование работы второго варианта. Отчет}\label{fig:012}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Моделирование работы второго варианта. Отчет}
+\phantomsection\label{ux43cux43eux434ux435ux43bux438ux440ux43eux432ux430ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-ux432ux442ux43eux440ux43eux433ux43e-ux432ux430ux440ux438ux430ux43dux442ux430.-ux43eux442ux447ux435ux442}
+При запуске с 6ю причалами заметим, что судна обрабатываются быстрее,
+чем успевают приходить новые, тк очередь не набирается. Более того,
+загруженность причалов очень низкая. Значит, установив наименьшее
+возможное число портов, равное 2, получим оптимальный результат.
+\end{frame}
+
+\begin{frame}{Построим модель оптимальной работы второго варианта в
+gpss}
+\phantomsection\label{ux43fux43eux441ux442ux440ux43eux438ux43c-ux43cux43eux434ux435ux43bux44c-ux43eux43fux442ux438ux43cux430ux43bux44cux43dux43eux439-ux440ux430ux431ux43eux442ux44b-ux432ux442ux43eux440ux43eux433ux43e-ux432ux430ux440ux438ux430ux43dux442ux430-ux432-gpss}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/13.png}
+\caption{Моделирование оптимальной работы второго варианта.
+Код}\label{fig:013}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Получим следующий отчет}
+\phantomsection\label{ux43fux43eux43bux443ux447ux438ux43c-ux441ux43bux435ux434ux443ux44eux449ux438ux439-ux43eux442ux447ux435ux442-3}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/14.png}
+\caption{Моделирование оптимальной работы второго варианта.
+Отчет}\label{fig:014}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выводы}
+\phantomsection\label{ux432ux44bux432ux43eux434ux44b}
+В результате была реализована с помощью gpss:
+
+\begin{itemize}
+\tightlist
+\item
+  модель работы вычислительного центра;
+\item
+  модель работы аэропорта;
+\item
+  модель работы морского порта.
+\end{itemize}
+\end{frame}
